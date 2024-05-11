@@ -1,0 +1,75 @@
+{
+	"cs3 imports": {
+		"prefix": "cs3i",
+		"body": [
+			"import numpy as np",
+			"import pandas as pd",
+		],
+		"description": "cs3 imports"
+	},
+	"pd.read_csv": {
+		"prefix": "dfr",
+		"body": [
+			"df$1 = pd.read_csv('$2', sep='$3', skiprows=$4, header=$5)",
+			"print(df$1.info())",
+			"display(df$1.head())",
+		],
+		"description": "pd.read_csv"
+	},
+	"display head": {
+		"prefix": "dh",
+		"body": [
+			"display(df$1.head())"
+		],
+		"description": "display"
+	},
+	"slice by column": {
+		"prefix": "slicec",
+		"body": [
+			"iloc[:, $1 : $2]",
+		],
+		"description": "slice by column"
+	},
+	"slice by row": {
+		"prefix": "slicer",
+		"body": [
+			"iloc[$1 : $2, :]",
+		],
+		"description": "slice by row"
+	},
+	"slice": {
+		"prefix": "slice",
+		"body": [
+			"iloc[$1 : $2, $3 : $4]",
+		],
+		"description": "slice"
+	},
+	"slice by column with name": {
+		"prefix": "slicecn",
+		"body": [
+			"loc[:, '$1' : '$2']",
+		],
+		"description": "slice by column by name"
+	},
+	"slice by row with name": {
+		"prefix": "slicern",
+		"body": [
+			"loc['$1' : '$2', :]",
+		],
+		"description": "slice by row by name"
+	},
+	"slice with name": {
+		"prefix": "slicen",
+		"body": [
+			"loc['$1' : '$2', '$3' : '$4']",
+		],
+		"description": "slice by name"
+	},
+	"set columns": {
+		"prefix": "setc",
+		"body": [
+			"df$1.columns = [$2]",
+		],
+		"description": "set columns"
+	}
+}

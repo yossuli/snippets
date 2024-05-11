@@ -1,0 +1,101 @@
+{
+	"className": {
+		"scope": "typescriptreact",
+		"prefix": "cn",
+		"body": [
+			"className={styles.$1}"
+		],
+		"description": "className intellisens by user snippet"
+	},
+	"const": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "ct",
+		"body": [
+			"const $1 = $2"
+		],
+		"description": "good const"
+	},
+	"const array": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "cta",
+		"body": [
+			"const $1 = [$2]"
+		],
+		"description": "good const aarray"
+	},
+	"const objct": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "cto",
+		"body": [
+			"const $1 = {$2: $3}"
+		],
+		"description": "good const object",
+	},
+	"const arrowfn": {
+		"scope": "typescript, typescriptreact",
+		"prefix": "ecafn",
+		"body": [
+			"const $1 = ($2) => $3"
+		],
+		"description": "good const arrowfn",
+	},
+	"export const arrowfn": {
+		"scope": "typescript",
+		"prefix": "ecafn",
+		"body": [
+			"export const $TM_FILENAME_BASE = ($1) => $2"
+		],
+		"description": "good export const arrowfn",
+	},
+	"const useState": {
+		"scope": "typescriptreact",
+		"prefix": "cus",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = useState($2)"
+		],
+		"description": "good const useState"
+	},
+	"multi cursor": {
+		"prefix": "mc",
+		"body": "$CURSOR_NUMBER"
+	},
+	"multi edit": {
+		"prefix": "medit",
+		"body": "${1:a}$CURSOR_NUMBER = $2$CURSOR_NUMBER"
+	},
+	"console log": {
+		"prefix": "cl",
+		"body": [
+			"console.log($1)"
+		],
+		"description": "console log with line number"
+	},
+	"console log whith line number": {
+		"prefix": "cln",
+		"body": [
+			"console.log('line $TM_LINE_NUMBER :', $1)"
+		],
+		"description": "console log with line number"
+	},
+	"console log whith line number and path": {
+		"prefix": "clpn",
+		"body": [
+			"console.log('$TM_FILEPATH:line $TM_LINE_NUMBER :', $1)"
+		],
+		"description": "console log with line number, path"
+	},
+	"good array": {
+		"prefix": "ga",
+		"body": [
+			"[${1/(?:([\\d]+)(\\s)?)/$1${2:+,}/gi}]"
+		],
+		"description": "good array"
+	},
+	"good string array": {
+		"prefix": "gsa",
+		"body": [
+			"[${1/(?:([\\w]+)(\\s)?)/'$1'${2:+,}/gi}]"
+		],
+		"description": "good array"
+	},
+}
